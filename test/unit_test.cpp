@@ -9,6 +9,7 @@ BOOST_AUTO_TEST_SUITE ( test_wrapper )
 
 std::string APIkey = "put your api key here";
 
+
 BOOST_AUTO_TEST_CASE( test_conditions_day )
 {
 //check is it day from current conditions same as today
