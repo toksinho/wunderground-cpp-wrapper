@@ -23,23 +23,14 @@ public:
     */
     virtual void loadData(std::string city,std::string state);
 
-     /*conditions() returns whole list of string pairs*/
-    std::list<std::pair<std::string,std::string>> conditions();
+
     /*
     Returns sunset or sunrise time for today e.g.  getCondition("sunset");
     param condition: sunset, sunrise
 
     */
     std::string getCondition(std::string);
-    /*
-    prints all data for 10 days in pairs. e.g. sunset 16:21
-    */
-    void printConditions();
 
-    /*
-    all data is saved in this list
-    */
-    std::list<std::pair<std::string,std::string>> lista;
 
 };
 }
