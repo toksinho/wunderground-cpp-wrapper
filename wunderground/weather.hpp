@@ -41,6 +41,7 @@ protected:
         std::string APIkey="";
         std::list<std::pair<std::string,std::string>> lista;
         virtual void loadData(std::string,std::string)=0;
+        
 };
 
 #endif // WEATHER_HPP
