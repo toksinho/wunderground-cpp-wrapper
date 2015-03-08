@@ -24,24 +24,12 @@ public:
     virtual void loadData(std::string,std::string);
 
 
-    std::list<std::pair<std::string,std::string>> conditions() const;
-
     /*
     Returns condition value as string for given day in month and hour  e.g.  getCondition("temperature","January 5","14");
     param condition: temperature, condition, humidity, wind speed, wind direction, pressure, precipitation
     param day: month name + day e.g February 7, january 4 (capital letter not necessary)
     */
     std::string getCondition(std::string condition,std::string day,std::string hour)const;
-
-    /*
-    prints all data for every hour in next 3 days in pairs
-    */
-    void printConditions();
-
-    /*
-    all data is saved in this list
-    */
-    std::list<std::pair<std::string,std::string>> lista;
 
 
 };
