@@ -23,8 +23,6 @@ public:
     */
     virtual void loadData(std::string city,std::string state);
 
-   /*conditions() returns whole list of string pairs*/
-    std::list<std::pair<std::string,std::string>> conditions()const;
 
     /*
     Returns specific condition for specified day of month, e.g. wind direction for 8th day of the month getCondition("wind direction","8");
@@ -33,17 +31,6 @@ public:
     */
 
     std::string getCondition(std::string condition,std::string date)const;
-
-    /*
-    prints all data for 10 days in pairs. e.g. wind speed 8
-    */
-    void printConditions();
-
-    /*
-    all data is saved in this list
-    */
-    std::list<std::pair<std::string,std::string>> lista;
-
 
 };
 }
