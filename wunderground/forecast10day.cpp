@@ -136,18 +136,5 @@ string Forecast10day::getCondition(string condition,string date) const//PROBLEM 
         return "Not found!";
 }
 
-void Forecast10day::printConditions()
-{
-    list<pair<string,string>>::iterator it=lista.begin();
-    for(it=lista.begin(); it!=lista.end(); it++)
-        cout<<' '<<(*it).first<<":  "<<(*it).second<<endl;
-}
-
-
-list<pair<string,string>> Forecast10day:: conditions() const
-{
-    return lista;
-}
-
 }
 
