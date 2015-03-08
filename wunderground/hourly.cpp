@@ -153,18 +153,6 @@ string Hourly::getCondition(string condition,string day, string hour) const//PRO
                         return "Not found that day or that hour!";
 }
 
-void Hourly::printConditions()
-{
-    list<pair<string,string>>::iterator it=lista.begin();
-    for(it=lista.begin();it!=lista.end();it++)
-        cout<<' '<<(*it).first<<":  "<<(*it).second<<endl;
-}
-
-
-list<pair<string,string>> Hourly:: conditions() const
-{
-    return lista;
-}
 }
 
 
