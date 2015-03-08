@@ -93,16 +93,5 @@ string Astronomy::getCondition(string condition)
                         return "Not found!";
 }
 
-void Astronomy::printConditions()
-{
-    list<pair<string,string>>::iterator it=lista.begin();
-    for(it=lista.begin();it!=lista.end();it++)
-        cout<<' '<<(*it).first<<":  "<<(*it).second<<endl;
-}
 
-
-list<pair<string,string>> Astronomy:: conditions()
-{
-    return lista;
-}
 }
