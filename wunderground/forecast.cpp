@@ -123,16 +123,5 @@ string Forecast::getCondition(string condition,string day)
                         return "Not found!";
 }
 
-void Forecast::printConditions()
-{
-    list<pair<string,string>>::iterator it=lista.begin();
-    for(it=lista.begin();it!=lista.end();it++)
-        cout<<' '<<(*it).first<<":  "<<(*it).second<<endl;
-}
 
-
-list<pair<string,string>> Forecast:: conditions()
-{
-    return lista;
-}
 }
