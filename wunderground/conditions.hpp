@@ -21,7 +21,6 @@ public:
     */
     virtual void loadData(std::string city,std::string state);
 
-    std::list<std::pair<std::string,std::string>> conditions();
 
     /*
     Returns condition  for today e.g.  getCondition("humidity");
@@ -29,9 +28,6 @@ public:
 
     */
     std::string getCondition(std::string condition);
-    void printConditions();
-    std::list<std::pair<std::string,std::string>> lista;
-
 
 };
 
